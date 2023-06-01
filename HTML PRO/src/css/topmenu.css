@@ -1,0 +1,57 @@
+.menu {
+
+  width:100%;
+  height: 40px;
+  z-index: 999;
+}
+
+.topMenu{
+  margin-left:78px;
+  width: calc(100% - 78px);
+  
+}
+.topMenu.collapsed {
+  margin-left: 240px;
+  width: calc(100% - 240px);
+
+}
+
+.menu > li {
+  width: 20%;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  background-color: #11101d;
+  position: relative;
+}
+
+.menu a {
+  color: #fff;
+}
+
+.submenu > li {
+  line-height: 50px;
+  background-color: #1d1b31;
+}
+
+.submenu {
+  z-index: 999;
+  width:100%;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.menu > li:hover,
+.menu > li:hover .submenu {
+  background-color: #1d1b31;
+  transition-duration: 0.5s;
+}
+
+.menu > li:hover .submenu {
+  height: 150px;  // 서브메뉴하나당 50px
+  transition-duration: 1s;
+  z-index: 1001; /* Ensure the submenu stays on top of the content */
+}

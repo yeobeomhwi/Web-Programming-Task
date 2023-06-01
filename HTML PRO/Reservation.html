@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/css/nav_bar.css">
+  <link rel="stylesheet" href="./src/css/topmenu.css">
+  <script src="./src/js/nav_bar.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    .home_content {
+      margin: 20px 20px;
+    }
+
+    .home_item1 {
+      width: 500px;
+    }
+  </style>
+</head>
+
+<!-- 예매 목록 -->
+<div class="home_item1">
+  <hr>
+  <form>
+    <h3>예매하기</h3>
+    <fieldset>
+      <legend> 구매자 정보 </legend>
+      <label for="userID">이름 : </label>
+      <input type="text" name="userID" id="userID" size="15/">
+      <br>
+      성별 : <input type="radio" name="gender" value="male">남성
+      <input type="radio" name="gender" value="female">여성
+      <br>
+      <label for="mday">생년 월일 : </label>
+      <input type="date" id="mday" name="mday" id="mday">
+      <br>
+      <label for="age">나이 : </label>
+      <input type="number" id="age" min="0" max="150" step="1" value="20">
+      <br>
+      <label for="phone">전화번호 : </label>
+      <input type="tel" id="phone" name="phone" pattern="“[0-9]{2,3}-[0-9]{3,4}-[0-9]{4]}“/"
+        placeholder="01*-00**-00**">
+      <br>
+      <input type="checkbox" name="Agree" id="Agree" value="infomation">
+      <label for="Agree">이용약관 동의</label>
+    </fieldset>
+    <br>
+  </form>
+  <br>
+  <button type="submit">결제하기</button>
+  <button type="reset">취소하기</button>
+  <br>
+</div>
+
+
+
+
+</body>
+
+</html>
