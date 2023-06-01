@@ -1,65 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>202168008 여범휘 예매하기</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./src/css/nav_bar.css">
-  <link rel="stylesheet" href="./src/css/topmenu.css">
-  <script src="./src/js/nav_bar.js"></script>
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .home_item1 {
+        margin: 100px 100px;
+        position: relative;
+        border: 2px solid #000;
+        padding: 20px;
+      }
 
-  <style>
-    .home_content {
-      margin: 20px 20px;
-    }
+      body {
+        background-color: rgba(200, 20, 20, 0.1);
+      }
 
-    .home_item1 {
-      width: 500px;
-    }
-  </style>
-</head>
+      hr {
+        background: #000;
+      }
+      h1 {
+        position: absolute;
+        top: 20%;
+      }
 
-<!-- 예매 목록 -->
-<div class="home_item1">
-  <hr>
-  <form>
-    <h3>예매하기</h3>
-    <fieldset>
-      <legend> 구매자 정보 </legend>
-      <label for="userID">이름 : </label>
-      <input type="text" name="userID" id="userID" size="15/">
-      <br>
-      성별 : <input type="radio" name="gender" value="male">남성
-      <input type="radio" name="gender" value="female">여성
-      <br>
-      <label for="mday">생년 월일 : </label>
-      <input type="date" id="mday" name="mday" id="mday">
-      <br>
-      <label for="age">나이 : </label>
-      <input type="number" id="age" min="0" max="150" step="1" value="20">
-      <br>
-      <label for="phone">전화번호 : </label>
-      <input type="tel" id="phone" name="phone" pattern="“[0-9]{2,3}-[0-9]{3,4}-[0-9]{4]}“/"
-        placeholder="01*-00**-00**">
-      <br>
-      <input type="checkbox" name="Agree" id="Agree" value="infomation">
+      .table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      .table td {
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        overflow: hidden;
+        padding: 10px 5px;
+        word-break: normal;
+      }
+
+      .table th {
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        overflow: hidden;
+        padding: 10px 5px;
+        word-break: normal;
+      }
+
+      .table .tg-c3ow {
+        border-color: inherit;
+        text-align: center;
+        vertical-align: top;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>202168008 여범휘</h1>
+    <div></div>
+    <table class="table" style="table-layout: fixed; width: 410px">
+      <colgroup>
+        <col style="width: 50px" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th class="tg-c3ow"></th>
+          <th class="tg-c3ow">월</th>
+          <th class="tg-c3ow">화</th>
+          <th class="tg-c3ow">수</th>
+          <th class="tg-c3ow">목</th>
+          <th class="tg-c3ow">금</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tg-c3ow">9시</td>
+          <td class="tg-c3ow"></td>
+          <td class="tg-c3ow"></td>
+          <td class="tg-c3ow day2" rowspan="5">
+            <br /><br />D<br />A<br />Y<br /><br />2
+          </td>
+          <td class="tg-c3ow"></td>
+          <td class="tg-c3ow"></td>
+        </tr>
+        <tr>
+          <td class="tg-c3ow">10시</td>
+          <td class="tg-c3ow"></td>
+          <td class="tg-c3ow"></td>
+          <td class="tg-c3ow"></td>
+          <td class="tg-c3ow"></td>
+        </tr>
+        <tr>
+          <td class="tg-c3ow">11시</td>
+          <td class="tg-c3ow"></td>
+          <td class="tg-c3ow"></td>
+          <td class="tg-c3ow"></td>
+          <td class="tg-c3ow"></td>
+        </tr>
+        <tr>
+          <td class="tg-c3ow">12시</td>
+          <td class="tg-c3ow"></td>
+          <td class="tg-c3ow"></td>
+          <td class="tg-c3ow"></td>
+          <td class="tg-c3ow day3" rowspan="5">
+            <br /><br />D<br />A<br />Y<br /><br />3
+          </td>
+        </tr>
+        <tr>
+          <td class="tg-c3ow">1시</td>
+          <td class="tg-c3ow day1" rowspan="5">
+            <br /><br /><br />D<br />A<br />Y<br /><br />1
+          </td>
+          <td class="tg-c3ow"></td>
+          <td class="tg-c3ow"></td>
+        </tr>
+        <tr>
+          <td class="tg-c3ow">2시</td>
+          <td class="tg-c3ow"></td>
+          <td class="tg-c3ow"></td>
+          <td class="tg-c3ow"></td>
+        </tr>
+        <tr>
+          <td class="tg-c3ow">3시</td>
+          <td class="tg-c3ow"></td>
+          <td class="tg-c3ow"></td>
+          <td class="tg-c3ow"></td>
+        </tr>
+        <tr>
+          <td class="tg-c3ow">4시</td>
+          <td class="tg-c3ow"></td>
+          <td class="tg-c3ow"></td>
+          <td class="tg-c3ow"></td>
+        </tr>
+        <tr>
+          <td class="tg-c3ow">5시</td>
+          <td class="tg-c3ow"></td>
+          <td class="tg-c3ow"></td>
+          <td class="tg-c3ow"></td>
+          <td class="tg-c3ow"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 예매 목록 -->
+    <div class="home_item1">
+      <!-- 사용자 입력을 받는 폼 요소입니다. -->
+      <form>
+        <!-- 예매하기 제목을 나타내는 <h3> 태그입니다. -->
+        <h3>예매하기</h3>
+        <hr />
+        <!-- 그룹화된 폼 요소를 나타내는 <fieldset> 태그입니다. -->
+        <fieldset>
+          <!-- 구매자 정보 그룹의 제목을 나타내는 <legend> 태그입니다. -->
+          <legend>구매자 정보</legend>
+          <!-- 이름 입력 필드를 위한 레이블을 나타내는 <label> 태그입니다. -->
+          <label for="userID">이름 : </label>
+          <!-- 이름을 입력하는 텍스트 입력 필드입니다. -->
+          <!-- 성별을 나타내기 위해 두 개의 라디오 버튼이 사용되었습니다. -->
+          <input type="text" name="userID" id="userID" size="15/" />
+          <br />
+          <!-- "남성"을 나타내는 라디오 버튼 -->
+          성별 : <input type="radio" name="gender" value="male" />남성
+          <!-- "여성"을 나타내는 라디오 버튼. -->
+          <input type="radio" name="gender" value="female" />여성
+          <br />
+          <!-- 생년 월일 입력 필드를 위한 레이블입니다. -->
+          <label for="mday">생년 월일 : </label>
+          <!-- type="date"를 사용한 생년 월일을 입력하는 날짜 입력 필드입니다 -->
+          <input
+            type="date"
+            id="mday"
+            name="mday"
+            id="mday"
+            onchange="calculateAge()"
+          />
+          <br />
+          <!-- 나이 입력 필드를 위한 레이블입니다. -->
+          <label for="age">나이 : </label>
+          <!-- 나이를 입력하는 숫자 입력 필드입니다. 최소값은 0, 최대값은 150이며, 1씩 증가합니다.-->
+          <input type="number" id="age" min="0" max="150" step="1" />
+          <br />
+
+          <label for="phone">전화번호 : </label>
+          <!-- 화번호를 입력하는 전화번호 입력 필드입니다. 패턴 속성을 통해 정규식으로 입력 형식을 제한하고, 플레이스홀더로 예시를 표시합니다. -->
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="“[0-9]{2,3}-[0-9]{3,4}-[0-9]{4]}“/"
+            placeholder="01*-00**-00**"
+          />
+          <br />
+          <label>날짜 선택: </label>
+          <input type="radio" name="date" value="DAY-1" />DAY-1
+          <input type="radio" name="date" value="DAY-2" />DAY-2
+          <input type="radio" name="date" value="DAY-3" />DAY-3
+          <br />
+        </fieldset>
+      </form>
+      <!-- 이용약관 동의를 받기 위한 체크박스입니다. -->
+      <input type="checkbox" name="Agree" id="Agree" value="infomation" />
       <label for="Agree">이용약관 동의</label>
-    </fieldset>
-    <br>
-  </form>
-  <br>
-  <button type="submit">결제하기</button>
-  <button type="reset">취소하기</button>
-  <br>
-</div>
+      <br />
+      <button type="submit">결제하기</button>
+      <button type="reset">취소하기</button>
+      <br />
+    </div>
 
+    <script>
+      function calculateAge() {
+        // 생년 월일 입력 필드의 값 가져오기
+        var birthdate = document.getElementById("mday").value;
 
+        // 현재 날짜 가져오기
+        var today = new Date();
 
+        // 생년 월일을 Date 객체로 변환하기
+        var birthdateObj = new Date(birthdate);
 
-</body>
+        // 현재 나이 계산하기 (현재 연도 - 생년 월일의 연도)
+        var age = today.getFullYear() - birthdateObj.getFullYear();
 
+        // 생일이 아직 도래하지 않았을 경우, 나이에서 1을 빼줍니다.
+        // 현재 월과 생년 월일의 월이 같은 경우, 그리고 현재 일보다 생년 월일의 일이 더 큰 경우에 해당합니다.
+        if (
+          today.getMonth() < birthdateObj.getMonth() ||
+          (today.getMonth() === birthdateObj.getMonth() &&
+            today.getDate() < birthdateObj.getDate())
+        ) {
+          age--;
+        }
+
+        // 나이를 나이 입력 필드에 설정하여 표시합니다.
+        document.getElementById("age").value = age;
+      }
+    </script>
+
+    <!-- 선택된 라디오 버튼에 따라 테이블 칸의 배경색을 변경하는 JavaScript 코드 -->
+    <script>
+      function changeTableColor() {
+        // 선택된 라디오 버튼의 값을 가져옵니다.
+        var selectedValue = document.querySelector(
+          'input[name="date"]:checked'
+        ).value;
+
+        // 테이블 칸의 배경색을 초기화합니다.
+        var tableCells = document.querySelectorAll(".tg-c3ow");
+        tableCells.forEach(function (cell) {
+          cell.style.backgroundColor = "";
+        });
+
+        // 선택된 라디오 버튼에 따라 테이블 칸의 배경색을 변경합니다.
+        if (selectedValue === "DAY-1") {
+          var day1Cells = document.querySelectorAll(".day1");
+          day1Cells.forEach(function (cell) {
+            cell.style.backgroundColor = "red";
+          });
+        } else if (selectedValue === "DAY-2") {
+          var day2Cells = document.querySelectorAll(".day2");
+          day2Cells.forEach(function (cell) {
+            cell.style.backgroundColor = "red";
+          });
+        } else if (selectedValue === "DAY-3") {
+          var day3Cells = document.querySelectorAll(".day3");
+          day3Cells.forEach(function (cell) {
+            cell.style.backgroundColor = "red";
+          });
+        }
+      }
+
+      // 라디오 버튼 변경 시 테이블 칸의 배경색을 변경하는 이벤트를 추가합니다.
+      var radioButtons = document.querySelectorAll('input[name="date"]');
+      radioButtons.forEach(function (button) {
+        button.addEventListener("change", changeTableColor);
+      });
+    </script>
+  </body>
 </html>
